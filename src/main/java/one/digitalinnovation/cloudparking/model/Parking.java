@@ -1,13 +1,15 @@
 package one.digitalinnovation.cloudparking.model;
 
+import java.time.LocalDateTime;
+
 public class Parking {
     private String id;
     private String license;
     private String state;
     private String model;
     private String color;
-    private String entryDate;
-    private String exitDate;
+    private LocalDateTime entryDate;
+    private LocalDateTime exitDate;
     private String bill;
     
     public Parking(String id, String license, String state, String model, String color) {
@@ -50,16 +52,16 @@ public class Parking {
     public void setColor(String color) {
         this.color = color;
     }
-    public String getEntryDate() {
+    public LocalDateTime getEntryDate() {
         return entryDate;
     }
-    public void setEntryDate(String entryDate) {
+    public void setEntryDate(LocalDateTime entryDate) {
         this.entryDate = entryDate;
     }
-    public String getExitDate() {
+    public LocalDateTime getExitDate() {
         return exitDate;
     }
-    public void setExitDate(String exitDate) {
+    public void setExitDate(LocalDateTime exitDate) {
         this.exitDate = exitDate;
     }
     public String getBill() {

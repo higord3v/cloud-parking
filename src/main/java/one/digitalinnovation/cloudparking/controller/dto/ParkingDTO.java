@@ -1,5 +1,7 @@
 package one.digitalinnovation.cloudparking.controller.dto;
 
+import java.time.LocalDateTime;
+
 import com.fasterxml.jackson.annotation.JsonInclude;
 
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
@@ -9,8 +11,8 @@ public class ParkingDTO {
     private String state;
     private String model;
     private String color;
-    private String entryDate;
-    private String exitDate;
+    private LocalDateTime entryDate;
+    private LocalDateTime exitDate;
     private String bill;
     
     public String getId() {
@@ -43,16 +45,16 @@ public class ParkingDTO {
     public void setColor(String color) {
         this.color = color;
     }
-    public String getEntryDate() {
+    public LocalDateTime getEntryDate() {
         return entryDate;
     }
-    public void setEntryDate(String entryDate) {
+    public void setEntryDate(LocalDateTime entryDate) {
         this.entryDate = entryDate;
     }
-    public String getExitDate() {
+    public LocalDateTime getExitDate() {
         return exitDate;
     }
-    public void setExitDate(String exitDate) {
+    public void setExitDate(LocalDateTime exitDate) {
         this.exitDate = exitDate;
     }
     public String getBill() {
