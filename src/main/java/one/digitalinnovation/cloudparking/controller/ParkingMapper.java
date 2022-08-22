@@ -12,7 +12,6 @@ import one.digitalinnovation.cloudparking.model.Parking;
 
 @Component
 public class ParkingMapper {
-
     private static final ModelMapper MODEL_MAPPER = new ModelMapper();
     
     public ParkingDTO toParkingDTO(Parking parking) {
